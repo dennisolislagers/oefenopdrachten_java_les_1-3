@@ -8,7 +8,15 @@ public class Geslacht {
 
         System.out.println("Wat is uw geslacht?");
         String geslacht = userInputScanner.nextLine();
-
+//        Hier de methode die de invoer omzet naar kleine letters.
+        String lowerCaseGeslacht = (geslacht.toLowerCase());
+        if (lowerCaseGeslacht.equals("m")) {
+            System.out.println("Dag Meneer");
+        } else if (lowerCaseGeslacht.equals("v")) {
+            System.out.println("Dag Mevrouw");
+        } else {
+            System.out.println("Dag persoon");
+        }
         /*
         Hier boven heeft de gebruiker zijn geslacht ingevoerd. Print met behulp van een beslissingsstructuur (if/else)
         de volgende berichten:
@@ -19,6 +27,6 @@ public class Geslacht {
         Bonus: Lukt het je om de code zo te maken dat hoofdletters genegeerd worden?
          */
 
-    }
 
+    }
 }
